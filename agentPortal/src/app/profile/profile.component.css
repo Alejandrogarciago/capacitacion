@@ -1,0 +1,11 @@
+.card-img-top {
+    height: 150px;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, .15), 0 1.5px 3px 0 rgba(0, 0, 0, .15);
+    margin: -100px auto 12px;
+    background-color: #fff;
+}
