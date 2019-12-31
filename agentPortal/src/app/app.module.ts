@@ -19,8 +19,6 @@ import { LoginComponent } from './login/login.component';
 
 
 import {  AngularFireDatabase } from '@angular/fire/database';
-
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
@@ -37,8 +35,7 @@ import { ProfileComponent } from './profile/profile.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    AngularFireStorageModule,
-    AngularFontAwesomeModule
+    AngularFireStorageModule
   ],
   providers: [AngularFireAuthGuard, AngularFireDatabase],
   bootstrap: [AppComponent]
