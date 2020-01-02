@@ -20,12 +20,16 @@ import { LoginComponent } from './login/login.component';
 
 import {  AngularFireDatabase } from '@angular/fire/database';
 import { ProfileComponent } from './profile/profile.component';
+import { TicketsComponent } from './tickets/tickets.component';
+import { CreateTicketComponent } from './tickets/create-tickets/create-tickets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ProfileComponent,
+    TicketsComponent,
+    CreateTicketComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@
     <nav id="sidebar" class="navbar-dark sykesNavbar sticky-top shadow" [ngClass]="status ? '' : 'active'"
         *ngIf="afAuth.user | async as userProfile">
         <div class="sidebar-header header-cover">
-          
+
             <div class="top-bar">
             </div>
 
@@ -21,6 +21,7 @@
                 </a>
 
                 <div class="dropdown-menu dropdown-toggle-split" aria-labelledby="dropdownMenuLink">
+                  <i class="fas fa-bars"></i>
                     <a class="dropdown-item" routerLink="profile/:id">View Profile</a>
                     <a class="dropdown-item" (click)="logout()">Logout</a>
                 </div>
@@ -28,8 +29,8 @@
         </div>
         <ul class="list-unstyled components">
             <li>
-                <a routerLink="/communications">
-                    <i class="fa fa-clipboard"></i>
+                <a routerLink="/tickets">
+
                     <span class="align-middle">Tickets</span>
                 </a>
             </li>
@@ -59,7 +60,7 @@
             </ul>
         </nav>
         <div class="container-fluid content-bg">
-      
+
             <router-outlet></router-outlet>
         </div>
 

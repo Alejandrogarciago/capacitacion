@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { TicketsComponent } from './tickets/tickets.component';
 
 
 import { AngularFireAuthGuard, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
@@ -15,6 +16,10 @@ map(
   user => (!!user && next.params.id === (user as any).uid) || ['']
 );
 const routes: Routes = [
+
+
+
+  { path: 'tickets', component: TicketsComponent},
   { path: '', component: LoginComponent, canActivate: [AngularFireAuthGuard],
   data: { authGuardPipe: redirectLoggedInToProfile }},
   {
